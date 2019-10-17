@@ -22,7 +22,7 @@ public class CriarAnoacoes {
     public void criarAnotacoes() {
 
         try {
-            SBCore.configurar(new ConfigCoreApiErpGatewayPagamento(), SBCore.ESTADO_APP.DESENVOLVIMENTO);
+            SBCore.configurar(new ConfigCoreApiErpCodigoPostal(), SBCore.ESTADO_APP.DESENVOLVIMENTO);
             for (ERPCodigoPostalBR trassp : ERPCodigoPostalBR.values()) {
 
                 GeradorAPIERP gerador = new GeradorAPIERP(trassp);

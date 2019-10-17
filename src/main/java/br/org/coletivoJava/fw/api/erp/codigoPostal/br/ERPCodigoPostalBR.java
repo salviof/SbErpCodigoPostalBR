@@ -12,11 +12,13 @@ package br.org.coletivoJava.fw.api.erp.codigoPostal.br;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
 
-@ApiERPColetivoJavaFW(descricaoApi = "Codigo Postal BR", nomeApi = "CodigoPostalBR", slugInicial = "GatewayPgto")
+@ApiERPColetivoJavaFW(descricaoApi = "Codigo Postal BR", nomeApi = "CodigoPostalBR", slugInicial = "CodigoPostalBR")
 public enum ERPCodigoPostalBR implements ItfApiErpSuperBits<ItfCodigoPostalBR> {
 
     REPUBLICA_VIRUTAL,
-    BANCO_LOCAL;
+    BANCO_LOCAL,
+    SERVICO_COLETIVO_JAVA,
+    API_FREE_REDUNTANTE;
 
     @Override
     public Class<? extends ItfCodigoPostalBR> getInterface() {
