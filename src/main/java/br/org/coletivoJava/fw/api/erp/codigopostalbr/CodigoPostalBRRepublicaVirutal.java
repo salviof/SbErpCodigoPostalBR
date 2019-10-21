@@ -1,7 +1,6 @@
 package br.org.coletivoJava.fw.api.erp.codigopostalbr;
 
 import javax.inject.Qualifier;
-import br.org.coletivoJava.fw.api.erp.codigoPostal.br.ItfCodigoPostalBR;
 import com.super_bits.modulosSB.SBCore.modulos.erp.InfoReferenciaApiErp;
 import br.org.coletivoJava.fw.api.erp.codigoPostal.br.ERPCodigoPostalBR;
 import java.lang.annotation.Documented;
