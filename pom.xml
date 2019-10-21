@@ -45,12 +45,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>br.org.coletivoJava.fw</groupId>
-            <artifactId>SBCore</artifactId>
-            <version>1.0.0-RC-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
+       
 
         <dependency>
             <groupId>junit</groupId>
