@@ -9,8 +9,12 @@ import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basic
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.coletivojava.fw.api.tratamentoErros.ErroPreparandoObjeto;
+import org.json.simple.JSONObject;
 
 /**
+ *
+ * Objeto criado para organizar a obtenção de dados de CEP em webservices
+ *
  *
  * @author desenvolvedorninja01
  * @since 21/10/2019
@@ -23,11 +27,24 @@ public class InfoRespostaCepWebService {
     private final String bairroStr;
     private final String logadouroStr;
 
+    /**
+     *
+     * @param pUnidadeFederativa Ex: MG
+     * @param pCidade Ex: Belo Horizonte
+     * @param pBairro Ex: Taquaril
+     * @param pLogadouro Ex: Av. Santa Catarina
+     */
     public InfoRespostaCepWebService(String pUnidadeFederativa, String pCidade, String pBairro, String pLogadouro) {
         unidadeFederativaStr = pUnidadeFederativa;
         cidadeStr = pCidade;
         bairroStr = pBairro;
         logadouroStr = pLogadouro;
+
+    }
+
+    public InfoRespostaCepWebService(JSONObject objcep) {
+        throw new UnsupportedOperationException("O METODO AINDA N\u00c3O FOI IMPLEMENTADO.");
+
     }
 
     public boolean applicarDados(ItfLocal pLocal) {
@@ -49,6 +66,22 @@ public class InfoRespostaCepWebService {
         pLocal.getBairro().getCidade().getUnidadeFederativa().setNome(unidadeFederativaStr);
         pLocal.getBairro().getCidade().getUnidadeFederativa().setSigla(unidadeFederativaStr);
         return true;
+    }
+
+    public String getUnidadeFederativaStr() {
+        return unidadeFederativaStr;
+    }
+
+    public String getCidadeStr() {
+        return cidadeStr;
+    }
+
+    public String getBairroStr() {
+        return bairroStr;
+    }
+
+    public String getLogadouroStr() {
+        return logadouroStr;
     }
 
 }
