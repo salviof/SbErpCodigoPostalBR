@@ -5,9 +5,6 @@
  */
 package br.org.coletivoJava.fw.api.erp.codigopostalbr;
 
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.cep.ItfLocal;
-import java.util.Map;
-
 /**
  *
  * @author desenvolvedorninja01

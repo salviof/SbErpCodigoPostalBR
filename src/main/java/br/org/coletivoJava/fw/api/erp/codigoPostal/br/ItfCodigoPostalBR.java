@@ -6,7 +6,7 @@
 package br.org.coletivoJava.fw.api.erp.codigoPostal.br;
 
 import br.org.coletivoJava.fw.api.erp.codigopostalbr.InfoRespostaCepWebService;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.cep.ItfLocal;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.cep.ComoLocal;
 import java.util.List;
 
 /**
@@ -16,15 +16,15 @@ import java.util.List;
  */
 public interface ItfCodigoPostalBR {
 
-    public boolean configuraEndereco(String cep, ItfLocal pLocal);
+    public boolean configuraEndereco(String cep, ComoLocal pLocal);
 
     public List<String> cepsPorEndereco(String pEndereco);
 
     public boolean isCepExiste(String pCep);
 
-    public boolean configurarPosicaoGeogafica(ItfLocal pLocal);
+    public boolean configurarPosicaoGeogafica(ComoLocal pLocal);
 
-    public boolean contribuirCadastroNovoEndereco(ItfLocal pLocal);
+    public boolean contribuirCadastroNovoEndereco(ComoLocal pLocal);
 
     public InfoRespostaCepWebService getInfoRespostaWebService(String cep);
 

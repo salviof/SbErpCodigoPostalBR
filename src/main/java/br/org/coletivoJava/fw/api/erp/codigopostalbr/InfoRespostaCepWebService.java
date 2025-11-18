@@ -5,7 +5,7 @@
  */
 package br.org.coletivoJava.fw.api.erp.codigopostalbr;
 
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.cep.ItfLocal;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.cep.ComoLocal;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.coletivojava.fw.api.tratamentoErros.ErroPreparandoObjeto;
@@ -47,7 +47,7 @@ public class InfoRespostaCepWebService {
 
     }
 
-    public boolean applicarDados(ItfLocal pLocal) {
+    public boolean applicarDados(ComoLocal pLocal) {
         try {
             pLocal.prepararNovoObjeto();
         } catch (ErroPreparandoObjeto ex) {
