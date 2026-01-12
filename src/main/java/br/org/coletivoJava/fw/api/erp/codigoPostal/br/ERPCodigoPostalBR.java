@@ -9,10 +9,10 @@ package br.org.coletivoJava.fw.api.erp.codigoPostal.br;
  *
  * @author desenvolvedorninja01
  */
-import com.super_bits.modulosSB.SBCore.modulos.erp.ApiERPColetivoJavaFW;
+import com.super_bits.modulosSB.SBCore.modulos.erp.InfoApiERPCarameloCode;
 import com.super_bits.modulosSB.SBCore.modulos.erp.ItfApiErpSuperBits;
 
-@ApiERPColetivoJavaFW(descricaoApi = "Codigo Postal BR", nomeApi = "CodigoPostalBR", slugInicial = "CodigoPostalBR")
+@InfoApiERPCarameloCode(descricaoApi = "Codigo Postal BR", nomeApi = "CodigoPostalBR", slugInicial = "CodigoPostalBR")
 public enum ERPCodigoPostalBR implements ItfApiErpSuperBits<ItfCodigoPostalBR> {
 
     REPUBLICA_VIRUTAL,
